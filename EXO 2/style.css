@@ -1,0 +1,8 @@
+#password, #confirm {
+    border-color: green;
+}
+
+#password, #confirm {
+    border-color: red;
+
+}

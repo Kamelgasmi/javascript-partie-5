@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="FR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initialscale=1.0"/>
+        <title>EXO 1 PARTIE 5 JAVASCRIPT</title>
+    </head>
+    <body>
+        <form id="formulaire">
+            <ol>
+                <li><label for="password">Mot de passe :</label><input type="password" name="password" id="password" placeholder="Mot de passe"/></li>
+                <li><label for="confirm">Confirmer le mot de passe :</label><input type="password" name="confirm" id="confirm" placeholder="confirmer le mdp"/></li>
+            </ol>
+            <button type="button" name="validate" onclick="verify()">Valider</button>
+        </form>
+        <script>
+            function verify() {
+                var password = document.getElementById('password'), confirm = document.getElementById('confirm');
+                if (password.value == confirm.value) {
+                    password.style.borderColor = 'green';
+                    confirm.style.borderColor = 'green';
+                }else {
+                    password.style.borderColor = 'red';
+                    confirm.style.borderColor = 'red';
+                }
+            }
+        </script>
+    </body>
+</html>
+
+

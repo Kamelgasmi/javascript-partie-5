@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="FR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initialscale=1.0"/>
+        <title>EXO 8 PARTIE 5 JAVASCRIPT</title>
+    </head>
+    <body>
+        <div id="formulary">
+            <form>
+                <ol>
+                    <li><label for="firstname">Prénom :</label><input class="active" type="text" name="firstname" id="firstname" placeholder="Prénom"/></li>
+                    <li><label for="age">Age :</label><input class="active" type="text" name="age" id="age" placeholder="Age"/></li>
+                </ol>
+        </div>
+            <button type="button" id="button">+</button>
+            </form>
+        <script>
+            let button = document.getElementById("button");
+            button.addEventListener("click", function() {
+            let formulary = document.getElementById('formulary');
+            let clone = formulary.firstElementChild.cloneNode(true);
+            formulary.appendChild(clone);
+            });
+        </script>
+    </body>
+</html>
